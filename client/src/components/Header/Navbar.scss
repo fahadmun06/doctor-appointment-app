@@ -1,0 +1,32 @@
+.main-section {
+
+    .logo-header::after {
+        content: ' ';
+        margin-left: 4px;
+        top: 38px;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #3498db;
+    }
+
+    &.sticky-header {
+        position: sticky;
+        top: 0;
+        background-color: white;
+        color: #3498db;
+        transform: translateY(-60px);
+        animation: StickyHeader 0.3s ease forwards;
+    }
+}
+
+@keyframes StickyHeader {
+    0% {
+        transform: translateY(-60px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
